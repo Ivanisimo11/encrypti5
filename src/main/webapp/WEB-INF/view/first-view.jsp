@@ -1,49 +1,23 @@
+
 <!DOCTYPE html>
 <html>
 <head>
     <style>
         body {
-            background-color: #f2f2f2;
+            background-image: url("https://img.freepik.com/free-vector/modern-desktop-background-geometric-blue-design-vector_53876-135923.jpg?w=1380&t=st=1687613700~exp=1687614300~hmac=6258e150e3e146f3bda7c7dd01122fb9f67fdb4d70fb02bac18028711dda423e");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
             text-align: center;
             font-family: Arial, sans-serif;
+            color: #fff;
         }
 
         h1 {
-            color: #333;
             font-size: 48px;
             margin-top: 50px;
             text-transform: uppercase;
             letter-spacing: 2px;
-        }
-
-        .options {
-            margin-top: 100px;
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-end;
-            flex-wrap: wrap;
-        }
-
-        .option {
-            width: 200px;
-            height: 200px;
-            margin: 20px;
-            padding: 20px;
-            background-color: #333;
-            color: #fff;
-            border-radius: 5px;
-            font-size: 24px;
-            text-transform: uppercase;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease;
-        }
-
-        .option:hover {
-            transform: scale(1.1);
         }
 
         .links {
@@ -61,26 +35,40 @@
             font-size: 18px;
             text-transform: uppercase;
         }
+
+        .text {
+            margin-top: 100px;
+            font-size: 24px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
 <h1>Encrypti5</h1>
-<h2>Encrypt</h2>
+<h2>Encryption</h2>
 <div class="links">
     <a href="atbashEncrypt">Atbash</a>
     <a href="caesarEncrypt">Caesar</a>
-    <a href="vigenerEncrypt">Vigenere</a>
+    <a href="vigenerEncrypt">Vigener</a>
     <a href="baconEncrypt">Bacon</a>
     <a href="a1z26Encrypt">A1Z26</a>
 </div>
-<br><br><br>
-<h2>Decrypt</h2>
+<br><br>
+<h2>Decryption</h2>
 <div class="links">
     <a href="atbashDecrypt">Atbash</a>
     <a href="caesarDecrypt">Caesar</a>
-    <a href="vigenerDecrypt">Vigenere</a>
+    <a href="vigenerDecrypt">Vigener</a>
     <a href="baconDecrypt">Bacon</a>
     <a href="a1z26Decrypt">A1Z26</a>
+</div>
+<div class="text">
+    <p>
+        Welcome to Encrypti5, an online platform designed to help users encrypt and decrypt different types of ciphers.
+    </p>
+    <p>
+        We offer convenient tools for working with five popular ciphers: Atbash, Caesar, Vigener, Bacon, and A1Z26.
+    </p>
 </div>
 </body>
 </html>

@@ -3,15 +3,66 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Show Details</title>
+    <title>A1Z26 Result</title>
+    <style>
+        body {
+            background-image: url("https://img.freepik.com/free-vector/modern-desktop-background-geometric-blue-design-vector_53876-135923.jpg?w=1380&t=st=1687613700~exp=1687614300~hmac=6258e150e3e146f3bda7c7dd01122fb9f67fdb4d70fb02bac18028711dda423e");
+            background-size: cover;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 150px;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 40px;
+        }
+
+        .result {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .try-again {
+            font-size: 18px;
+            margin-top: 50px;
+            text-decoration: none;
+            color: white;
+            border: 1px solid white;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        .try-again:hover {
+            background-color: white;
+            color: #1f1f1f;
+        }
+    </style>
 </head>
 <body>
 <%--@elvariable id="a1z26" type="com.webapp.cipher.A1Z26"--%>
-<form:form action="showA1Z26" modelAttribute="a1z26" method="post">
-    Text: ${a1z26.text}
-    <br>
-    <br>
-</form:form>
-<a href="/">TRY AGAIN</a><br><br><br>
+<h1>Result:</h1>
+
+<div class="result">
+    ${a1z26.text}
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<a class="try-again" href="/">TRY ANOTHER CIPHER</a>
+<br>
+<br>
+<br>
+<br>
+<a class="try-again" href="/a1z26Encrypt">TRY ENCRYPT WITH A1Z26</a>
+<br>
+<br>
+<br>
+<br>
+<a class="try-again" href="/a1z26Decrypt">TRY DECRYPT WITH A1Z26</a>
 </body>
 </html>
